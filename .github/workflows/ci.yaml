@@ -21,6 +21,7 @@ jobs:
       - name: Build action
         run: yarn build
       - name: Sync test branch
+        if: github.ref == 'refs/heads/main'
         uses: ./
         with:
           branch: test
