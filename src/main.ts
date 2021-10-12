@@ -18,7 +18,7 @@ async function run(): Promise<void> {
       return;
     }
 
-    core.debug(`Fast-forwarding '${branch}' to '${ref}'...`);
+    core.info(`Fast-forwarding '${branch}' to '${ref}'...`);
 
     await octokit.rest.git.updateRef({
       ...repo,
