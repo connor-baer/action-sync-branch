@@ -16,12 +16,10 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn --pure-lockfile --prefer-offline
-      - name: Lint
+      - name: Lint code
         run: yarn lint:ci
-      - name: Build
+      - name: Build action
         run: yarn build
-      - name: Package
-        run: yarn package
       - name: Sync test branch
         uses: ./
         with:

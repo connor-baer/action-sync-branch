@@ -3,9 +3,9 @@ import * as github from '@actions/github';
 
 async function run(): Promise<void> {
   try {
-    const branch: string = core.getInput('branch');
-    const force: boolean = core.getInput('force') === 'true';
-    const token: string = core.getInput('token');
+    const branch = core.getInput('branch');
+    const force = core.getBooleanInput('force');
+    const token = core.getInput('token');
 
     const octokit = github.getOctokit(token);
     const { ref, repo, sha } = github.context;

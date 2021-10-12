@@ -1,11 +1,11 @@
 {
   "name": "action-sync-branch",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "GitHub Action to keep a branch in sync with the current branch",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsc",
-    "package": "ncc build --source-map --license licenses.txt",
+    "start": "tsc --watch",
+    "build": "tsc && ncc build --source-map --license licenses.txt",
     "lint": "foundry run eslint . --ext .js,.jsx,.json,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:ci": "yarn lint --format github"
