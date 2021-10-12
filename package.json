@@ -2,7 +2,7 @@
   "name": "action-sync-branch",
   "version": "0.0.0",
   "description": "GitHub Action to keep a branch in sync with the current branch",
-  "main": "dist/index.js",
+  "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
     "package": "ncc build --source-map --license licenses.txt",
