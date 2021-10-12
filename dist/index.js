@@ -50,7 +50,8 @@ function run() {
                 core.warning(`'${branch}' is already up to date with '${baseBranch}', skipping.`);
                 return;
             }
-            core.info(`Fast-forwarding '${branch}' to '${ref}'...`);
+            const commitHash = sha.slice(0, 7);
+            core.info(`Fast-forwarding '${branch}' to '${commitHash}'...`);
             yield octokit.rest.git.updateRef(Object.assign(Object.assign({}, repo), { ref: `heads/${branch}`, sha,
                 force }));
         }

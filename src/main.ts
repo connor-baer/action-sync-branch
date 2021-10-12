@@ -18,7 +18,9 @@ async function run(): Promise<void> {
       return;
     }
 
-    core.info(`Fast-forwarding '${branch}' to '${ref}'...`);
+    const commitHash = sha.slice(0, 7);
+
+    core.info(`Fast-forwarding '${branch}' to '${commitHash}'...`);
 
     await octokit.rest.git.updateRef({
       ...repo,
