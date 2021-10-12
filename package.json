@@ -1,6 +1,6 @@
 {
   "name": "action-sync-branch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub Action to keep a branch in sync with the current branch",
   "main": "lib/main.js",
   "scripts": {

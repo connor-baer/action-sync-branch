@@ -41,7 +41,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const branch = core.getInput('branch');
-            const force = core.getInput('force') === 'true';
+            const force = core.getBooleanInput('force');
             const token = core.getInput('token');
             const octokit = github.getOctokit(token);
             const { ref, repo, sha } = github.context;
@@ -50,7 +50,7 @@ function run() {
                 core.warning(`'${branch}' is already up to date with '${baseBranch}', skipping.`);
                 return;
             }
-            core.debug(`Fast-forwarding '${branch}' to '${ref}'...`);
+            core.info(`Fast-forwarding '${branch}' to '${ref}'...`);
             yield octokit.rest.git.updateRef(Object.assign(Object.assign({}, repo), { ref: `heads/${branch}`, sha,
                 force }));
         }
