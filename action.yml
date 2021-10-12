@@ -10,7 +10,7 @@ inputs:
     description: 'A GitHub token with permission to push to the repo. Generate one at https://github.com/settings/tokens/new?description=Sync%20Branch&scopes=repo.'
     required: true
   force:
-    description: 'Whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to false will make sure you're not overwriting work.'
+    description: 'Whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to false will make sure you are not overwriting work.'
     default: false
 
 runs:
