@@ -27,6 +27,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: ./
+      - name: Sync test branch
+        uses: ./
         with:
-          milliseconds: 1000
+          branch: test
+          force: false
+          token: ${{ secrets.GITHUB_TOKEN }}
