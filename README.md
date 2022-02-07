@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
-      - uses: connor-baer/action-sync-branch@master
+      - uses: connor-baer/action-sync-branch@main
         with:
           branch: test
           token: ${{ secrets.GITHUB_TOKEN }}
