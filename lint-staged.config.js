@@ -1,4 +1,3 @@
-module.exports = require('@sumup/foundry/lint-staged')(
-  { language: 'TypeScript' },
-  { '*.ts': () => ['yarn build', 'git add dist'] },
-);
+module.exports = require('@sumup/foundry/lint-staged')({
+  '*.ts': () => ['yarn build', 'git add dist'],
+});
