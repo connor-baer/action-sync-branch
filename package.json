@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.8.0",
-    "@actions/github": "^5.0.1"
+    "@actions/github": "^5.0.3"
   },
   "devDependencies": {
     "@sumup/foundry": "^5.0.0",
