@@ -15,7 +15,8 @@ name: Sync branch
 
 on:
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   sync-branch:
