@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@sumup/foundry": "^5.1.0",
-    "@types/node": "^18.0.6",
+    "@types/node": "^18.6.1",
     "@vercel/ncc": "^0.34.0",
     "js-yaml": "^4.1.0",
     "typescript": "^4.7.4"
