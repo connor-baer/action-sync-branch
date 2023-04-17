@@ -7,8 +7,7 @@
     "start": "tsc --watch",
     "build": "tsc && ncc build --source-map --license licenses.txt",
     "lint": "foundry run eslint . --ext .js,.jsx,.json,.ts,.tsx",
-    "lint:fix": "yarn lint --fix",
-    "lint:ci": "yarn lint --format github"
+    "lint:fix": "yarn lint --fix"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,7 @@
     "@actions/github": "^5.1.1"
   },
   "devDependencies": {
-    "@sumup/foundry": "^5.1.0",
+    "@sumup/foundry": "^6.0.0",
     "@types/node": "^18.15.11",
     "@vercel/ncc": "^0.36.1",
     "js-yaml": "^4.1.0",
