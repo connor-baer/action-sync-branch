@@ -475,10 +475,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sumup/foundry@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-6.0.0.tgz#68d71780ae2e3de2df6c365f52118cecfd9588f4"
-  integrity sha512-MFgZQRh9jzZI8zoj8VOHP8bm5aftynfRla5pAAox8VxO/LZzUemhPelP/en4EJ9wJbtrL3qbKEb99oIWcjKDvQ==
+"@sumup/foundry@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-6.1.0.tgz#aff801a6864777262e917ba1cedbd3a818308d2e"
+  integrity sha512-U318D9f5cW/3iOZ/s8glnzME0XyZDyJSZw6KS7hB+DR7V3t+2WWEAAzU5r9nOt8PFURl0bulqFrIwCYrCGDJtw==
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/eslint-parser" "^7.21.3"
