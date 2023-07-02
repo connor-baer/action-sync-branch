@@ -7,7 +7,7 @@
     "start": "tsc --watch",
     "build": "tsc && ncc build --source-map --license licenses.txt",
     "lint": "foundry run eslint . --ext .js,.jsx,.json,.ts,.tsx",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "npm run lint --fix"
   },
   "repository": {
     "type": "git",
