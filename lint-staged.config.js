@@ -1,3 +1,3 @@
 module.exports = require('@sumup/foundry/lint-staged')({
-  '*.ts': () => ['yarn build', 'git add dist'],
+  '*.ts': () => ['npm run build', 'git add dist'],
 });

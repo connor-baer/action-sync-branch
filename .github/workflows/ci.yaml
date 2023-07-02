@@ -9,17 +9,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js v16
+      - name: Use Node.js v18
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
-          cache: 'yarn'
+          node-version: 18.x
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn --pure-lockfile --prefer-offline
+        run: npm ci
       - name: Lint code
-        run: yarn lint
+        run: npm run lint
       - name: Build action
-        run: yarn build
+        run: npm run build
       - name: Sync test branch
         if: github.ref == 'refs/heads/main'
         uses: ./
