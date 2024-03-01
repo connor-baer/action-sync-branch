@@ -24,7 +24,7 @@
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
-    "@sumup/foundry": "^6.2.0",
+    "@sumup/foundry": "^6.2.1",
     "@types/node": "^18.16.3",
     "@vercel/ncc": "^0.38.1",
     "js-yaml": "^4.1.0",
