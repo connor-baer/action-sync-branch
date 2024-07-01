@@ -28,6 +28,6 @@
     "@types/node": "^20.13.0",
     "@vercel/ncc": "^0.38.1",
     "js-yaml": "^4.1.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   }
 }
