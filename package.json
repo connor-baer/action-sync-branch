@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/connor-baer/action-sync-branch.git"
   },
-  "keywords": [
-    "github",
-    "actions"
-  ],
+  "keywords": ["github", "actions"],
   "author": "Connor Bär <github@connorbaer.co",
   "license": "MIT",
   "dependencies": {
@@ -24,7 +21,7 @@
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
-    "@sumup/foundry": "^7.2.0",
+    "@sumup-oss/foundry": "^8.4.1",
     "@types/node": "^22.13.10",
     "@vercel/ncc": "^0.38.3",
     "js-yaml": "^4.1.0",
