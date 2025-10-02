@@ -2,18 +2,26 @@
   "name": "action-sync-branch",
   "version": "1.0.1",
   "description": "GitHub Action to keep a branch in sync with the current branch",
-  "main": "lib/main.js",
+  "type": "module",
+  "main": "dist/main.js",
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc && ncc build --source-map --license licenses.txt",
-    "lint": "foundry run eslint . --ext .js,.jsx,.json,.ts,.tsx",
-    "lint:fix": "npm run lint --fix"
+    "lint": "biome check --diagnostic-level=error && eslint . --quiet --concurrency=auto",
+    "lint:fix": "biome check --write --diagnostic-level=error && eslint . --fix --quiet --concurrency=auto",
+    "lint:ci": "biome ci --diagnostic-level=error && eslint . --quiet --concurrency=auto"
+  },
+  "engines": {
+    "node": "24.x"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/connor-baer/action-sync-branch.git"
   },
-  "keywords": ["github", "actions"],
+  "keywords": [
+    "github",
+    "actions"
+  ],
   "author": "Connor Bär <github@connorbaer.co",
   "license": "MIT",
   "dependencies": {
@@ -21,8 +29,8 @@
     "@actions/github": "^6.0.1"
   },
   "devDependencies": {
-    "@sumup-oss/foundry": "^8.4.1",
-    "@types/node": "^24.6.1",
+    "@sumup-oss/foundry": "^9.0.2",
+    "@types/node": "^24.6.2",
     "@vercel/ncc": "^0.38.4",
     "js-yaml": "^4.1.0",
     "typescript": "^5.9.3"

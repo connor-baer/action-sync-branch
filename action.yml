@@ -1,22 +1,22 @@
-name: 'Sync Branch'
-description: 'Keep a branch in sync with the current branch'
-author: 'Connor Bär'
+name: "Sync Branch"
+description: "Keep a branch in sync with the current branch"
+author: "Connor Bär"
 
 inputs:
   branch:
-    description: 'The name of the branch to sync with the current branch.'
+    description: "The name of the branch to sync with the current branch."
     required: true
   token:
-    description: 'A GitHub token with permission to push to the repo. Generate one at https://github.com/settings/tokens/new?description=Sync%20Branch&scopes=repo.'
+    description: "A GitHub token with permission to push to the repo. Generate one at https://github.com/settings/tokens/new?description=Sync%20Branch&scopes=repo."
     required: true
   force:
-    description: 'Whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to false will make sure you are not overwriting work.'
+    description: "Whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to false will make sure you are not overwriting work."
     default: false
 
 runs:
-  using: 'node20'
-  main: 'dist/index.js'
+  using: "node20"
+  main: "dist/index.js"
 
 branding:
-  icon: 'refresh-cw'
-  color: 'white'
+  icon: "refresh-cw"
+  color: "white"
