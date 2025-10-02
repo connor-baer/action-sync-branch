@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "GitHub Action to keep a branch in sync with the current branch",
   "type": "module",
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc && ncc build --source-map --license licenses.txt",
