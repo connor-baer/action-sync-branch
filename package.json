@@ -11,6 +11,9 @@
     "lint:fix": "biome check --write --diagnostic-level=error && eslint . --fix --quiet --concurrency=auto",
     "lint:ci": "biome ci --diagnostic-level=error && eslint . --quiet --concurrency=auto"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/connor-baer/action-sync-branch.git"

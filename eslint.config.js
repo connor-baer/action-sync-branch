@@ -7,9 +7,8 @@ export default defineConfig([
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['*.js', '*.mjs'],
+          allowDefaultProject: ['*.js', '*.cjs'],
         },
-        // eslint-disable-next-line n/no-unsupported-features/node-builtins
         tsconfigRootDir: import.meta.dirname,
       },
     },
