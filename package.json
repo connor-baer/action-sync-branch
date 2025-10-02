@@ -2,18 +2,23 @@
   "name": "action-sync-branch",
   "version": "1.0.1",
   "description": "GitHub Action to keep a branch in sync with the current branch",
+  "type": "module",
   "main": "lib/main.js",
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc && ncc build --source-map --license licenses.txt",
-    "lint": "foundry run eslint . --ext .js,.jsx,.json,.ts,.tsx",
-    "lint:fix": "npm run lint --fix"
+    "lint": "biome check --diagnostic-level=error && eslint . --quiet --concurrency=auto",
+    "lint:fix": "biome check --write --diagnostic-level=error && eslint . --fix --quiet --concurrency=auto",
+    "lint:ci": "biome ci --diagnostic-level=error && eslint . --quiet --concurrency=auto"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/connor-baer/action-sync-branch.git"
   },
-  "keywords": ["github", "actions"],
+  "keywords": [
+    "github",
+    "actions"
+  ],
   "author": "Connor Bär <github@connorbaer.co",
   "license": "MIT",
   "dependencies": {
