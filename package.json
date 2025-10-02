@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@sumup-oss/foundry": "^9.0.2",
-    "@types/node": "^24.6.1",
+    "@types/node": "^24.6.2",
     "@vercel/ncc": "^0.38.4",
     "js-yaml": "^4.1.0",
     "typescript": "^5.9.3"
