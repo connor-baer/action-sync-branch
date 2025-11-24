@@ -18,13 +18,16 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   sync-branch:
     name: Update test branch
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - uses: connor-baer/action-sync-branch@v2
         with:
