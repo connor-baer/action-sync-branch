@@ -29,10 +29,10 @@
     "@actions/github": "^9.1.1"
   },
   "devDependencies": {
-    "@sumup-oss/foundry": "^10.1.0",
-    "@types/node": "^26.4.0",
+    "@sumup-oss/foundry": "^10.2.0",
+    "@types/node": "^26.6.3",
     "@vercel/ncc": "^0.45.0",
-    "js-yaml": "^5.4.1",
+    "js-yaml": "^5.4.2",
     "typescript": "^6.0.3"
   }
 }
