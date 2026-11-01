@@ -32,7 +32,7 @@
     "@sumup-oss/foundry": "^10.2.0",
     "@types/node": "^26.6.3",
     "@vercel/ncc": "^0.45.0",
-    "js-yaml": "^5.4.2",
+    "js-yaml": "^5.5.0",
     "typescript": "^6.0.3"
   }
 }
